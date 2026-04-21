@@ -10,7 +10,7 @@ pipeline {
     }
 
      options {
-        timeout(time: 10, unit: 'SEC') 
+        timeout(time: 10, unit: 'SECONDS') 
     }
 
     stages {
@@ -58,6 +58,10 @@ pipeline {
 
         failure {
             echo 'I will run if fails'
+        }
+
+        aborted {
+            echo 'pipeline is aborted'
         }
     }
 }
