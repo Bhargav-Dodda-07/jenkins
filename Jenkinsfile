@@ -23,6 +23,7 @@ pipeline {
     }
 
     stages {
+        // This is Build Section
         stage('Build') {
             steps {
                 script {
