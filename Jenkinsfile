@@ -63,6 +63,7 @@ pipeline {
         }
     }
 
+    // These are post-Build sections
     post {
         always {
             echo 'I will always say Hello again!'
